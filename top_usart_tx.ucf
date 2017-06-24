@@ -1,0 +1,49 @@
+
+#Created by Constraints Editor (xc6slx16-csg324-3) - 2014/03/19
+NET "clk" TNM_NET = "clk";
+TIMESPEC TS_clk = PERIOD "clk" 10 ns HIGH 50 %;
+
+
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "dataready" IOSTANDARD = LVCMOS33;
+NET "reset" IOSTANDARD = LVCMOS33;
+NET "txbusy" IOSTANDARD = LVCMOS33;
+NET "tx" IOSTANDARD = LVCMOS33;
+
+
+NET "dataready" LOC = C4;
+NET "reset" LOC = B8;
+NET "txbusy" LOC = U16;
+
+
+NET "datain[7]" IOSTANDARD = LVCMOS33;
+NET "datain[6]" IOSTANDARD = LVCMOS33;
+NET "datain[5]" IOSTANDARD = LVCMOS33;
+NET "datain[4]" IOSTANDARD = LVCMOS33;
+NET "datain[3]" IOSTANDARD = LVCMOS33;
+NET "datain[2]" IOSTANDARD = LVCMOS33;
+NET "datain[1]" IOSTANDARD = LVCMOS33;
+NET "datain[0]" IOSTANDARD = LVCMOS33;
+
+
+
+
+
+
+NET "clk" LOC = V10;
+
+
+NET "tx" LOC = N18;
+
+
+NET "datain[1]" LOC = T9;
+NET "datain[0]" LOC = T10;
+
+# PlanAhead Generated physical constraints 
+
+NET "datain[2]" LOC = V9;
+NET "datain[3]" LOC = M8;
+NET "datain[4]" LOC = N8;
+NET "datain[5]" LOC = U8;
+NET "datain[6]" LOC = V8;
+NET "datain[7]" LOC = T5;
